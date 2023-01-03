@@ -18,6 +18,15 @@ nav{
     background-color: white;
     
 }
+.buttons{
+    text-align: right;
+    width: 100%;
+    height: fit-content;
+}
+
+.buttons .div{
+    height: fit-content;
+}
 .title{
     text-align: center;
     margin-top: 2rem;
@@ -76,6 +85,7 @@ input.invalid {
 }
 .tab {
     display: none;
+   
 }
 
 .tab p{
@@ -116,46 +126,25 @@ input.invalid {
     border-radius: 3px;
     background-color: #6b6b6b;
     color: white;
-    margin-bottom: 5rem;
+    
 }
 
-#nextBtn {
+#nextBtn, #submitbtn {
     padding: 10px;
     border: none;
     border-radius: 3px;
-    background-color: rgb(0, 44, 50);
+    background-color: rgba(255, 255, 255, 0.301);
     color: white;
-    margin-bottom: 5rem;
+    
 }
 
-.forgot_password a {
-    color: rgb(131, 130, 130);
-    text-decoration: none;
 
-}
 .buttons{
     margin-top: 3rem;
     margin-right: 15rem;
   
 }
-.forgot_password {
-    text-align: right;
-}
 
-.forgot_password a:hover {
-    color: #04AA6D;
-}
-
-.submit {
-    padding: 10px;
-    border: none;
-    border-radius: 3px;
-    background-color: #04AA6D;
-    color: white;
-    width: 500px;
-    height: 35px;
-    cursor: pointer;
-}
 
 .custom-select select {
     display: none;
@@ -625,3 +614,16 @@ textarea{
    white-space: nowrap;
    color: #adadad;
 }
+
+#good-job{
+    text-align: center;
+}
+
+#good-job p{
+    font-weight: 400;
+        white-space: nowrap;
+        margin-top: -1rem;
+        color: #adadad !important
+
+}
+
