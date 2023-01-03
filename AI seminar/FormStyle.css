@@ -81,7 +81,17 @@ color: white;
 }
 
 input.invalid {
-    background-color: #ffdddd;
+    border: 0.05rem solid;
+    border-color: rgb(188, 0, 0);
+}
+
+#invalidtext{
+    color: rgb(188, 0, 0);
+    font-size: 1rem;
+    background-color: rgba(0, 0, 0, 0.381);
+    width: fit-content;
+    padding: 0.5rem;
+    border-radius: 0.1rem;
 }
 .tab {
     display: none;

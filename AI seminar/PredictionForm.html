@@ -37,13 +37,15 @@
 
             <div class="tab">
                 <h1>Personal Details</h1>
+                <p id="invalidtext" hidden>Please fill all details</p>
                 <label>Full Name:</label>
                 </br>
                 <input type="text" value="" id="name">
+
                 </br></br>
                 <label>Age:</label>
                 </br>
-                <input type="number" value="" id="age">
+                <input type="text" value="" id="age">
                 </br></br>
                 <label>Gender:</label>
 
@@ -490,14 +492,16 @@
         var x, y, i, valid = true;
         x = document.getElementsByClassName("tab");
         y = x[currentTab].getElementsByTagName("input");
+        var invalidtext = document.getElementById("invalidtext");
         // A loop that checks every input field in the current tab:
         for (i = 0; i < y.length; i++) {
             // If a field is empty...
             if (y[i].value == "") {
                 // add an "invalid" class to the field:
                 y[i].className += " invalid";
+                invalidtext.style.display = "block";
                 // and set the current valid status to false:
-                valid = true;
+                valid = false;
             }
         }
         // If the valid status is true, mark the step as finished and valid:
